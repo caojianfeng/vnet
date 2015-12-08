@@ -7,7 +7,7 @@ from BaseHTTPServer import HTTPServer, BaseHTTPRequestHandler
 
 __author__ = 'caojianfeng'
 
-host_ip = '127.0.0.1'
+host_ip = '192.168.4.43'
 host_port = 8880
 
 get_base_path = "webbase/gets/"
