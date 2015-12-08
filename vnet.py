@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 # E-mail: windcao@hotmail.com
+# https://github.com/caojianfeng/vnet
 import urlparse
 from BaseHTTPServer import HTTPServer, BaseHTTPRequestHandler
 
