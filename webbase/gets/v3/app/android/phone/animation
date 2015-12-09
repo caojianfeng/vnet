@@ -1,1 +1,28 @@
-{"code":1,"data":{"stateCode":1,"message":"成功","returnData":{"hasMore":true,"comics":[{"name":"baidu","url":"https://www.baidu.com","cover":"https://www.baidu.com/img/baidu_jgylogo3.gif"},{"name":"IBM","url":"http://www.ibm.com/","cover":"http://www.ibm.com/us-en/images/homepage/11302015-f-websphere-middleware-9139_760x640.jpg"},{"name":"SoSo","url":"http://www.SoSo.com","cover":"http://www.sogou.com/images/logo/new/favicon.ico?v=2"}]}}}
+{
+    "code": 1,
+    "message": "成功",
+    "data": {
+        "stateCode": 1,
+        "message": "成功",
+        "returnData": {
+            "hasMore": true,
+            "comics": [
+                {
+                    "name": "google",
+                    "url": "https://www.google.com",
+                    "cover": "http://img2.cache.netease.com/cnews/2015/12/7/20151207073500bdbb7_550.jpg"
+                },
+                {
+                    "name": "IBM",
+                    "url": "http://www.ibm.com/",
+                    "cover": "http://img5.cache.netease.com/cnews/2015/12/7/201512071100156f469.jpg"
+                },
+                {
+                    "name": "u17",
+                    "url": "http://www.u17.com/",
+                    "cover": "http://img1.gtimg.com/news/pics/hv1/91/241/1981/128876071.jpg"
+                }
+            ]
+        }
+    }
+}
