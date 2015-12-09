@@ -30,7 +30,7 @@ def get_file_content(file_name):
     return all_the_text
 
 
-# http://127.0.0.1:8880/v3/app/android/phone/animation?argCon=0&page=XXX
+# http://192.168.36.106:8880/v3/app/android/phone/animation?argCon=0&page=XXX
 # 对应的文件路径：/v3/app/android/phone/animation
 class VHTTPHandle(SimpleHTTPRequestHandler):
     def do_GET(self):
