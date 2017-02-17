@@ -35,10 +35,19 @@ def main(cmds, inc=60):
 
 # 每60秒查看下网络连接情况
 if __name__ == '__main__':
-    curl_header =  "curl -o /dev/null -w %{time_connect}::%{time_starttransfer}::%{time_total}\"\n\" --connect-timeout 4 -m 4 ";
+    //curl -w,–write-out参数详解:http://www.letuknowit.com/post/17.html
+    curl_header =  "curl -o /dev/null -w " \
+                   "\"dns:\"%{time_namelookup}" \
+                   "\" ; connect:\"%{time_connect}" \
+                   "\" ; appconnect:\"%{time_appconnect}" \
+                   "\" ; pretransfer:\"%{time_pretransfer}" \
+                   "\" ; redirect:\"%{time_redirect}" \
+                   "\" ; starttransfer:\"%{time_starttransfer}" \
+                   "\" ; total:\"%{time_total}" \
+                   "\"\n\" --connect-timeout 4 -m 4 "
     cmds = [
-        curl_header+" \"http://10.169.105.46:8880/v3/app/android/phone/animation?argCon=0&page=XXX\""
-        ,curl_header+" \"http://gundam.ovo.top/api/test.php?uid=S1427347837&cert=c79b18d383c8675bfce0b7fb1d520949\""
+        # curl_header+" \"http://10.169.105.46:8880/v3/app/android/phone/animation?argCon=0&page=XXX\""
+        curl_header+" \"http://gundam.ovo.top/api/test.php?uid=S1427347837&cert=c79b18d383c8675bfce0b7fb1d520949\""
     ]
 
     main(cmds, 60)
