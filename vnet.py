@@ -43,8 +43,6 @@ class VHTTPHandle(SimpleHTTPRequestHandler):
         file_path = get_base_path + res.path
         if os.path.exists(file_path):
             content = get_file_content(file_path)
-            print content
-            print content.encode('raw_unicode_escape')
             self.wfile.write(content.encode('raw_unicode_escape'))
 
 
