@@ -35,7 +35,7 @@ def main(cmds, inc=60):
 
 # 每60秒查看下网络连接情况
 if __name__ == '__main__':
-    //curl -w,–write-out参数详解:http://www.letuknowit.com/post/17.html
+    #curl -w,–write-out参数详解:http://www.letuknowit.com/post/17.html
     curl_header =  "curl -o /dev/null -w " \
                    "\"dns:\"%{time_namelookup}" \
                    "\" ; connect:\"%{time_connect}" \
